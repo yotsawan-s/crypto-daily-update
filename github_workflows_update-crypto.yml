@@ -1,0 +1,41 @@
+name: Daily Crypto Update
+
+on:
+  schedule:
+    # 00:00 UTC = 07:00 GMT+7
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run update script
+        run: |
+          python scripts/update_crypto.py
+
+      - name: Commit & Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add data/summary.json REPORT.md
+            git commit -m "chore: daily crypto update"
+            git push
+          else
+            echo "No changes to commit."
+          fi
