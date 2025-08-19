@@ -1,26 +1,26 @@
 {
-  "last_run_utc": "2025-08-19T01:49:26.202972+00:00",
+  "last_run_utc": "2025-08-19T01:51:40.183584+00:00",
   "coins": [
     {
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
-      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f7385795340>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-      "timestamp_utc": "2025-08-19T01:49:26.202972+00:00"
+      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f3912e99700>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
+      "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
     },
     {
       "id": "ethereum",
       "name": "Ethereum",
       "symbol": "ETH",
-      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f73856d2630>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-      "timestamp_utc": "2025-08-19T01:49:26.202972+00:00"
+      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ce630>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
+      "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
     },
     {
       "id": "solana",
       "name": "Solana",
       "symbol": "SOL",
-      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/solana/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f73856d2d50>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-      "timestamp_utc": "2025-08-19T01:49:26.202972+00:00"
+      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/solana/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ced50>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
+      "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
     }
   ],
   "history": [
@@ -47,6 +47,32 @@
           "symbol": "SOL",
           "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/solana/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f73856d2d50>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
           "timestamp_utc": "2025-08-19T01:49:26.202972+00:00"
+        }
+      ]
+    },
+    {
+      "run_at": "2025-08-19T01:51:40.183584+00:00",
+      "data": [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin",
+          "symbol": "BTC",
+          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f3912e99700>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
+          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ce630>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
+          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
+        },
+        {
+          "id": "solana",
+          "name": "Solana",
+          "symbol": "SOL",
+          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/solana/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ced50>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
+          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
         }
       ]
     }
