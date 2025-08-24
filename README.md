@@ -5,8 +5,10 @@ Daily scheduled fetch of crypto prices (Bitcoin, Ethereum, Solana) with RSI (14)
 ## Features
 - Daily schedule (cron) using GitHub Actions
 - Fetch prices from CoinGecko (free public API)
-- Calculate RSI (Wilder 14) and 200-day Simple Moving Average (MA200)
-- Generate trading-style signal (BUY / SELL on MA200 cross, UPTREND, DOWNTREND)
+- Calculate RSI (Wilder 14) and Moving Averages (MA200, MA20)
+- Generate dual trading signals:
+  - **Signal**: Long-term trend based on MA200 crossover
+  - **Signal2**: 1-day responsive signals based on MA20 + RSI + daily price changes
 - Persist historical snapshots (rolling history)
 - Easy coin list expansion via `coins.json`
 
@@ -44,11 +46,25 @@ Commit & push. รอบถัดไปจะรวม Solana ให้
 Change `vs_currency` (ex: `usd`, `thb`, `eur`, `usdt`) in `coins.json`.
 
 ## Signals
-- BUY (Cross Above MA200): Price crosses from below to above MA200
-- SELL (Cross Below MA200): Price crosses from above to below MA200
-- UPTREND (Above MA200): Price > MA200 without new cross
-- DOWNTREND (Below MA200): Price < MA200 without new cross
-- RSI Tags: >70 Overbought, <30 Oversold
+- **Signal (Long-term MA200 based):**
+  - BUY (Cross Above MA200): Price crosses from below to above MA200
+  - SELL (Cross Below MA200): Price crosses from above to below MA200
+  - UPTREND (Above MA200): Price > MA200 without new cross
+  - DOWNTREND (Below MA200): Price < MA200 without new cross
+
+- **Signal2 (1-Day MA20 based):**
+  - STRONG_BUY (MA20 Cross + RSI): MA20 crossover up with RSI < 70
+  - BUY (MA20 Cross): Price crosses above MA20
+  - STRONG_SELL (MA20 Cross + RSI): MA20 crossover down with RSI > 30
+  - SELL (MA20 Cross): Price crosses below MA20
+  - OVERBOUGHT (Above MA20): Price > MA20 with RSI >= 70
+  - STRONG_UP (Above MA20): Price > MA20 with >2% daily gain
+  - UPTREND (Above MA20): Price > MA20 normal trend
+  - OVERSOLD (Below MA20): Price < MA20 with RSI <= 30
+  - STRONG_DOWN (Below MA20): Price < MA20 with >2% daily loss
+  - DOWNTREND (Below MA20): Price < MA20 normal trend
+
+- **RSI Tags:** >70 Overbought, <30 Oversold
 
 ## Extend Ideas
 - Slack / Telegram notifications

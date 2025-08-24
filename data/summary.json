@@ -1,19 +1,50 @@
 {
-  "last_run_utc": "2025-08-24T10:34:04.697922+00:00",
+  "last_run_utc": "2025-08-24T10:36:42.928675+00:00",
   "coins": [
     {
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
-      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f506f899700>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-      "timestamp_utc": "2025-08-24T10:34:04.697922+00:00"
+      "vs_currency": "usd",
+      "timestamp_utc": "2025-08-24T10:36:42.928675+00:00",
+      "current_price": 430648.3478379979,
+      "rsi_period": 14,
+      "rsi": 100.0,
+      "ma_window": 200,
+      "ma200": 192778.02,
+      "ma20": 369046.98,
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "OVERBOUGHT (Above MA20)"
     },
     {
       "id": "ethereum",
       "name": "Ethereum",
       "symbol": "ETH",
-      "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f506eece570>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-      "timestamp_utc": "2025-08-24T10:34:04.697922+00:00"
+      "vs_currency": "usd",
+      "timestamp_utc": "2025-08-24T10:36:42.928675+00:00",
+      "current_price": 21532.41739189986,
+      "rsi_period": 14,
+      "rsi": 100.0,
+      "ma_window": 200,
+      "ma200": 9638.9,
+      "ma20": 18452.35,
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "OVERBOUGHT (Above MA20)"
+    },
+    {
+      "id": "solana",
+      "name": "Solana",
+      "symbol": "SOL",
+      "vs_currency": "usd",
+      "timestamp_utc": "2025-08-24T10:36:42.928675+00:00",
+      "current_price": 1076.6208695949933,
+      "rsi_period": 14,
+      "rsi": 100.0,
+      "ma_window": 200,
+      "ma200": 481.95,
+      "ma20": 922.62,
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "OVERBOUGHT (Above MA20)"
     }
   ],
   "history": [
@@ -217,6 +248,56 @@
           "symbol": "ETH",
           "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f506eece570>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
           "timestamp_utc": "2025-08-24T10:34:04.697922+00:00"
+        }
+      ]
+    },
+    {
+      "run_at": "2025-08-24T10:36:42.928675+00:00",
+      "data": [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin",
+          "symbol": "BTC",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-08-24T10:36:42.928675+00:00",
+          "current_price": 430648.3478379979,
+          "rsi_period": 14,
+          "rsi": 100.0,
+          "ma_window": 200,
+          "ma200": 192778.02,
+          "ma20": 369046.98,
+          "signal": "UPTREND (Above MA200)",
+          "signal2": "OVERBOUGHT (Above MA20)"
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-08-24T10:36:42.928675+00:00",
+          "current_price": 21532.41739189986,
+          "rsi_period": 14,
+          "rsi": 100.0,
+          "ma_window": 200,
+          "ma200": 9638.9,
+          "ma20": 18452.35,
+          "signal": "UPTREND (Above MA200)",
+          "signal2": "OVERBOUGHT (Above MA20)"
+        },
+        {
+          "id": "solana",
+          "name": "Solana",
+          "symbol": "SOL",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-08-24T10:36:42.928675+00:00",
+          "current_price": 1076.6208695949933,
+          "rsi_period": 14,
+          "rsi": 100.0,
+          "ma_window": 200,
+          "ma200": 481.95,
+          "ma20": 922.62,
+          "signal": "UPTREND (Above MA200)",
+          "signal2": "OVERBOUGHT (Above MA20)"
         }
       ]
     }
