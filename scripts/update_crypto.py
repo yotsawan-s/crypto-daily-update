@@ -49,6 +49,74 @@ def moving_average(values, window):
         return None
     return statistics.fmean(values[-window:])
 
+def exponential_moving_average(values, period):
+    """Calculate exponential moving average"""
+    if len(values) < period:
+        return None
+    
+    # Start with simple moving average for the first calculation
+    sma = sum(values[:period]) / period
+    ema = sma
+    
+    # Calculate smoothing factor
+    multiplier = 2.0 / (period + 1)
+    
+    # Apply EMA formula for remaining values
+    for i in range(period, len(values)):
+        ema = (values[i] * multiplier) + (ema * (1 - multiplier))
+    
+    return ema
+
+def calculate_cdc_actionzone(prices, ema1_period=12, ema2_period=26):
+    """
+    Calculate CDC ActionZone V3 2020 signal
+    
+    Based on two EMAs and their relationship to price:
+    - EMA1 (fast): typically 12 periods
+    - EMA2 (slow): typically 26 periods
+    
+    Returns zone classification for ActionZone indicator
+    """
+    if len(prices) < max(ema1_period, ema2_period):
+        return "INSUFFICIENT_DATA"
+    
+    current_price = prices[-1]
+    ema1 = exponential_moving_average(prices, ema1_period)
+    ema2 = exponential_moving_average(prices, ema2_period)
+    
+    if ema1 is None or ema2 is None:
+        return "INSUFFICIENT_DATA"
+    
+    # Determine zone based on relative positions
+    if current_price > ema1 and ema1 > ema2:
+        return "GREEN"  # Strong bullish
+    elif current_price < ema1 and ema1 < ema2:
+        return "RED"    # Strong bearish
+    elif current_price > ema1 and ema1 < ema2:
+        return "YELLOW" # Mixed bullish
+    elif current_price > ema2 and ema2 > ema1:
+        return "ORANGE" # Mixed bullish stronger
+    elif current_price < ema1 and ema1 > ema2:
+        return "BLUE"   # Mixed bearish
+    elif current_price < ema2 and ema2 < ema1:
+        return "AQUA"   # Mixed bearish stronger
+    else:
+        return "NEUTRAL" # Edge case
+
+def format_actionzone_signal(zone):
+    """Format ActionZone signal for display"""
+    zone_descriptions = {
+        "GREEN": "GREEN (Buy Signal)",
+        "RED": "RED (Sell Signal)", 
+        "YELLOW": "YELLOW (Mixed Bull)",
+        "ORANGE": "ORANGE (Bull Transition)",
+        "BLUE": "BLUE (Mixed Bear)",
+        "AQUA": "AQUA (Bear Transition)",
+        "NEUTRAL": "NEUTRAL",
+        "INSUFFICIENT_DATA": "N/A"
+    }
+    return zone_descriptions.get(zone, zone)
+
 def classify_signal(current_price, prev_price, ma200, prev_ma200):
     if ma200 is None or prev_ma200 is None:
         return "INSUFFICIENT_DATA"
@@ -77,18 +145,19 @@ def generate_report(summary):
     lines.append("")
     lines.append(f"Last Update (UTC): {summary['last_run_utc']}")
     lines.append("")
-    lines.append("| Coin | Symbol | Price (vs base) | RSI | MA200 | Signal |")
-    lines.append("|------|--------|------------------|-----|-------|--------|")
+    lines.append("| Coin | Symbol | Price (vs base) | RSI | MA200 | Signal | Signal2 |")
+    lines.append("|------|--------|------------------|-----|-------|--------|---------|")
     for c in summary["coins"]:
         if "error" in c:
-            lines.append(f"| {c['name']} | {c.get('symbol','')} | ERROR | - | - | {c['error']} |")
+            lines.append(f"| {c['name']} | {c.get('symbol','')} | ERROR | - | - | {c['error']} | - |")
             continue
         price = f"{c['current_price']:.2f}"
         rsi_display = format_rsi_status(c['rsi']) if c['rsi'] is not None else "N/A"
         ma200_display = f"{c['ma200']:.2f}" if c.get("ma200") is not None else "N/A"
-        lines.append(f"| {c['name']} | {c['symbol']} | {price} {c['vs_currency'].upper()} | {rsi_display} | {ma200_display} | {c['signal']} |")
+        signal2_display = c.get('signal2', 'N/A')
+        lines.append(f"| {c['name']} | {c['symbol']} | {price} {c['vs_currency'].upper()} | {rsi_display} | {ma200_display} | {c['signal']} | {signal2_display} |")
     lines.append("")
-    lines.append("หมายเหตุ: สัญญาณเป็นเพียงการประเมินเชิงเทคนิคจาก MA200 + RSI (ไม่ใช่คำแนะนำการลงทุน)")
+    lines.append("หมายเหตุ: สัญญาณเป็นเพียงการประเมินเชิงเทคนิคจาก MA200 + RSI และ CDC ActionZone V3 2020 (ไม่ใช่คำแนะนำการลงทุน)")
     REPORT_MD.write_text("\n".join(lines), encoding="utf-8")
 
 def main():
@@ -114,6 +183,8 @@ def main():
             prev_ma200 = moving_average(prices[:-1], ma_window) if len(prices) >= ma_window + 1 else None
             rsi_value = compute_rsi(prices, period=rsi_period)
             signal = classify_signal(current_price, prev_price, ma200, prev_ma200)
+            actionzone = calculate_cdc_actionzone(prices)
+            signal2 = format_actionzone_signal(actionzone)
             entry = {
                 "id": coin_id,
                 "name": name,
@@ -125,7 +196,8 @@ def main():
                 "rsi": None if rsi_value is None else round(rsi_value, 2),
                 "ma_window": ma_window,
                 "ma200": None if ma200 is None else round(ma200, 2),
-                "signal": signal
+                "signal": signal,
+                "signal2": signal2
             }
             results.append(entry)
         except Exception as e:
