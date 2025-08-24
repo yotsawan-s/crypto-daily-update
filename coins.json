@@ -4,6 +4,7 @@
   "ma_window": 200,
   "coins": [
     { "id": "bitcoin", "symbol": "BTC", "name": "Bitcoin" },
-    { "id": "ethereum", "symbol": "ETH", "name": "Ethereum" }
+    { "id": "ethereum", "symbol": "ETH", "name": "Ethereum" },
+    { "id": "solana", "symbol": "SOL", "name": "Solana" }
   ]
 }

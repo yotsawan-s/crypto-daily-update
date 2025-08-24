@@ -1,11 +1,11 @@
 # Crypto Daily Summary
 
-Last Update (UTC): 2025-08-24T02:03:15.009396+00:00
+Last Update (UTC): 2025-08-24T10:36:42.928675+00:00
 
-| Coin | Symbol | Price (vs base) | RSI | MA200 | Signal |
-|------|--------|------------------|-----|-------|--------|
-| Bitcoin | BTC | 115427.25 USD | 48.25 | 100789.57 | UPTREND (Above MA200) |
-| Ethereum | ETH | 4776.72 USD | 65.04 | 2616.40 | UPTREND (Above MA200) |
-| Solana | SOL | 207.95 USD | 62.63 | 157.11 | UPTREND (Above MA200) |
+| Coin | Symbol | Price (vs base) | RSI | MA200 | MA20 | Signal (MA200) | Signal2 (1-Day) |
+|------|--------|------------------|-----|-------|------|----------------|-----------------|
+| Bitcoin | BTC | 430648.35 USD | 100.00 (Overbought) | 192778.02 | 369046.98 | UPTREND (Above MA200) | OVERBOUGHT (Above MA20) |
+| Ethereum | ETH | 21532.42 USD | 100.00 (Overbought) | 9638.90 | 18452.35 | UPTREND (Above MA200) | OVERBOUGHT (Above MA20) |
+| Solana | SOL | 1076.62 USD | 100.00 (Overbought) | 481.95 | 922.62 | UPTREND (Above MA200) | OVERBOUGHT (Above MA20) |
 
-หมายเหตุ: สัญญาณเป็นเพียงการประเมินเชิงเทคนิคจาก MA200 + RSI (ไม่ใช่คำแนะนำการลงทุน)
+หมายเหตุ: Signal = สัญญาณจาก MA200 (ระยะยาว), Signal2 = สัญญาณแบบ 1-day (ระยะสั้น) จาก MA20 + RSI (ไม่ใช่คำแนะนำการลงทุน)
