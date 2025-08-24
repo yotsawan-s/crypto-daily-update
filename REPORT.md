@@ -1,10 +1,18 @@
-# Crypto Daily Summary
+# Crypto Daily Summary (CDC ActionZone V3 2020)
 
-Last Update (UTC): 2025-08-24T12:20:11.534482+00:00
+Last Update (UTC): 2025-08-24T12:23:56.831661+00:00
 
-| Coin | Symbol | Price (vs base) | RSI | MA200 | Signal |
-|------|--------|------------------|-----|-------|--------|
-| Bitcoin | BTC | ERROR | - | - | HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe530b7a030>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)")) |
-| Ethereum | ETH | ERROR | - | - | HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe530b7a810>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)")) |
+| Coin | Symbol | Price (vs base) | RSI | Fast EMA | Slow EMA | CDC Signal |
+|------|--------|------------------|-----|----------|----------|------------|
+| Bitcoin | BTC | 50480.00 USD | 53.61 | 49822.00 | 49699.05 | 🟢 BUY |
+| Ethereum | ETH | 3647.00 USD | 55.62 | 3463.51 | 3424.85 | 🟢 BUY |
 
-หมายเหตุ: สัญญาณเป็นเพียงการประเมินเชิงเทคนิคจาก MA200 + RSI (ไม่ใช่คำแนะนำการลงทุน)
+**CDC ActionZone V3 2020 Signals:**
+- 🟢 BUY: Bull trend + Price > Fast EMA
+- 🔵 Pre Buy 1: Bear trend + Price > Fast EMA + Price < Slow EMA
+- 🔵 Pre Buy 2: Bear trend + Price > Fast EMA + Price > Slow EMA
+- 🔴 SELL: Bear trend + Price < Fast EMA
+- 🟡 Pre Sell 1: Bull trend + Price < Fast EMA + Price > Slow EMA
+- 🟠 Pre Sell 2: Bull trend + Price < Fast EMA + Price < Slow EMA
+
+หมายเหตุ: สัญญาณเป็นเพียงการประเมินเชิงเทคนิคจาก CDC ActionZone + RSI (ไม่ใช่คำแนะนำการลงทุน)
