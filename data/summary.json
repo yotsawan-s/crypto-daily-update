@@ -1,5 +1,5 @@
 {
-  "last_run_utc": "2025-08-24T02:03:15.009396+00:00",
+  "last_run_utc": "2025-08-24T10:11:32.502778+00:00",
   "coins": [
     {
       "id": "bitcoin",
@@ -12,7 +12,8 @@
       "rsi": 48.25,
       "ma_window": 200,
       "ma200": 100789.57,
-      "signal": "UPTREND (Above MA200)"
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "GREEN (Buy Signal)"
     },
     {
       "id": "ethereum",
@@ -25,7 +26,8 @@
       "rsi": 65.04,
       "ma_window": 200,
       "ma200": 2616.4,
-      "signal": "UPTREND (Above MA200)"
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "GREEN (Buy Signal)"
     },
     {
       "id": "solana",
@@ -38,193 +40,9 @@
       "rsi": 62.63,
       "ma_window": 200,
       "ma200": 157.11,
-      "signal": "UPTREND (Above MA200)"
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "GREEN (Buy Signal)"
     }
   ],
-  "history": [
-    {
-      "run_at": "2025-08-19T01:49:26.202972+00:00",
-      "data": [
-        {
-          "id": "bitcoin",
-          "name": "Bitcoin",
-          "symbol": "BTC",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f7385795340>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:49:26.202972+00:00"
-        },
-        {
-          "id": "ethereum",
-          "name": "Ethereum",
-          "symbol": "ETH",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f73856d2630>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:49:26.202972+00:00"
-        },
-        {
-          "id": "solana",
-          "name": "Solana",
-          "symbol": "SOL",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/solana/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f73856d2d50>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:49:26.202972+00:00"
-        }
-      ]
-    },
-    {
-      "run_at": "2025-08-19T01:51:40.183584+00:00",
-      "data": [
-        {
-          "id": "bitcoin",
-          "name": "Bitcoin",
-          "symbol": "BTC",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f3912e99700>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
-        },
-        {
-          "id": "ethereum",
-          "name": "Ethereum",
-          "symbol": "ETH",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ce630>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
-        },
-        {
-          "id": "solana",
-          "name": "Solana",
-          "symbol": "SOL",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/solana/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ced50>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
-        }
-      ]
-    },
-    {
-      "run_at": "2025-08-22T10:40:28.739667+00:00",
-      "data": [
-        {
-          "id": "bitcoin",
-          "name": "Bitcoin",
-          "symbol": "BTC",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-22T10:40:28.739667+00:00",
-          "current_price": 112593.73833737517,
-          "rsi_period": 14,
-          "rsi": 41.0,
-          "ma_window": 200,
-          "ma200": 100587.94,
-          "signal": "UPTREND (Above MA200)"
-        },
-        {
-          "id": "ethereum",
-          "name": "Ethereum",
-          "symbol": "ETH",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-22T10:40:28.739667+00:00",
-          "current_price": 4304.54066856191,
-          "rsi_period": 14,
-          "rsi": 57.01,
-          "ma_window": 200,
-          "ma200": 2593.68,
-          "signal": "UPTREND (Above MA200)"
-        },
-        {
-          "id": "solana",
-          "name": "Solana",
-          "symbol": "SOL",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-22T10:40:28.739667+00:00",
-          "current_price": 181.5255018274498,
-          "rsi_period": 14,
-          "rsi": 50.67,
-          "ma_window": 200,
-          "ma200": 156.98,
-          "signal": "UPTREND (Above MA200)"
-        }
-      ]
-    },
-    {
-      "run_at": "2025-08-23T01:48:28.167085+00:00",
-      "data": [
-        {
-          "id": "bitcoin",
-          "name": "Bitcoin",
-          "symbol": "BTC",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-23T01:48:28.167085+00:00",
-          "current_price": 116346.2176950434,
-          "rsi_period": 14,
-          "rsi": 50.13,
-          "ma_window": 200,
-          "ma200": 100700.28,
-          "signal": "UPTREND (Above MA200)"
-        },
-        {
-          "id": "ethereum",
-          "name": "Ethereum",
-          "symbol": "ETH",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-23T01:48:28.167085+00:00",
-          "current_price": 4759.493513240988,
-          "rsi_period": 14,
-          "rsi": 64.57,
-          "ma_window": 200,
-          "ma200": 2606.4,
-          "signal": "UPTREND (Above MA200)"
-        },
-        {
-          "id": "solana",
-          "name": "Solana",
-          "symbol": "SOL",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-23T01:48:28.167085+00:00",
-          "current_price": 196.9768587250394,
-          "rsi_period": 14,
-          "rsi": 57.59,
-          "ma_window": 200,
-          "ma200": 157.02,
-          "signal": "UPTREND (Above MA200)"
-        }
-      ]
-    },
-    {
-      "run_at": "2025-08-24T02:03:15.009396+00:00",
-      "data": [
-        {
-          "id": "bitcoin",
-          "name": "Bitcoin",
-          "symbol": "BTC",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-24T02:03:15.009396+00:00",
-          "current_price": 115427.24869950041,
-          "rsi_period": 14,
-          "rsi": 48.25,
-          "ma_window": 200,
-          "ma200": 100789.57,
-          "signal": "UPTREND (Above MA200)"
-        },
-        {
-          "id": "ethereum",
-          "name": "Ethereum",
-          "symbol": "ETH",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-24T02:03:15.009396+00:00",
-          "current_price": 4776.719488960967,
-          "rsi_period": 14,
-          "rsi": 65.04,
-          "ma_window": 200,
-          "ma200": 2616.4,
-          "signal": "UPTREND (Above MA200)"
-        },
-        {
-          "id": "solana",
-          "name": "Solana",
-          "symbol": "SOL",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-08-24T02:03:15.009396+00:00",
-          "current_price": 207.9541009744835,
-          "rsi_period": 14,
-          "rsi": 62.63,
-          "ma_window": 200,
-          "ma200": 157.11,
-          "signal": "UPTREND (Above MA200)"
-        }
-      ]
-    }
-  ]
+  "history": []
 }
