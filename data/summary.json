@@ -1,5 +1,5 @@
 {
-  "last_run_utc": "2025-08-24T02:03:15.009396+00:00",
+  "last_run_utc": "2025-08-24T10:11:32.502778+00:00",
   "coins": [
     {
       "id": "bitcoin",
@@ -12,7 +12,8 @@
       "rsi": 48.25,
       "ma_window": 200,
       "ma200": 100789.57,
-      "signal": "UPTREND (Above MA200)"
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "GREEN (Buy Signal)"
     },
     {
       "id": "ethereum",
@@ -25,7 +26,8 @@
       "rsi": 65.04,
       "ma_window": 200,
       "ma200": 2616.4,
-      "signal": "UPTREND (Above MA200)"
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "GREEN (Buy Signal)"
     },
     {
       "id": "solana",
@@ -38,7 +40,8 @@
       "rsi": 62.63,
       "ma_window": 200,
       "ma200": 157.11,
-      "signal": "UPTREND (Above MA200)"
+      "signal": "UPTREND (Above MA200)",
+      "signal2": "GREEN (Buy Signal)"
     }
   ],
   "history": []
