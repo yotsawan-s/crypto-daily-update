@@ -1,11 +1,10 @@
 # Crypto Daily Summary
 
-Last Update (UTC): 2025-08-24T02:03:15.009396+00:00
+Last Update (UTC): 2025-08-24T12:20:11.534482+00:00
 
 | Coin | Symbol | Price (vs base) | RSI | MA200 | Signal |
 |------|--------|------------------|-----|-------|--------|
-| Bitcoin | BTC | 115427.25 USD | 48.25 | 100789.57 | UPTREND (Above MA200) |
-| Ethereum | ETH | 4776.72 USD | 65.04 | 2616.40 | UPTREND (Above MA200) |
-| Solana | SOL | 207.95 USD | 62.63 | 157.11 | UPTREND (Above MA200) |
+| Bitcoin | BTC | ERROR | - | - | HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe530b7a030>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)")) |
+| Ethereum | ETH | ERROR | - | - | HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fe530b7a810>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)")) |
 
 หมายเหตุ: สัญญาณเป็นเพียงการประเมินเชิงเทคนิคจาก MA200 + RSI (ไม่ใช่คำแนะนำการลงทุน)
