@@ -1,17 +1,17 @@
 {
-  "last_run_utc": "2025-08-24T02:03:15.009396+00:00",
+  "last_run_utc": "2025-08-25T01:57:12.082577+00:00",
   "coins": [
     {
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-08-24T02:03:15.009396+00:00",
-      "current_price": 115427.24869950041,
+      "timestamp_utc": "2025-08-25T01:57:12.082577+00:00",
+      "current_price": 113022.33989939325,
       "rsi_period": 14,
-      "rsi": 48.25,
+      "rsi": 43.51,
       "ma_window": 200,
-      "ma200": 100789.57,
+      "ma200": 100861.37,
       "signal": "UPTREND (Above MA200)"
     },
     {
@@ -19,25 +19,12 @@
       "name": "Ethereum",
       "symbol": "ETH",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-08-24T02:03:15.009396+00:00",
-      "current_price": 4776.719488960967,
+      "timestamp_utc": "2025-08-25T01:57:12.082577+00:00",
+      "current_price": 4731.39304076226,
       "rsi_period": 14,
-      "rsi": 65.04,
+      "rsi": 63.52,
       "ma_window": 200,
-      "ma200": 2616.4,
-      "signal": "UPTREND (Above MA200)"
-    },
-    {
-      "id": "solana",
-      "name": "Solana",
-      "symbol": "SOL",
-      "vs_currency": "usd",
-      "timestamp_utc": "2025-08-24T02:03:15.009396+00:00",
-      "current_price": 207.9541009744835,
-      "rsi_period": 14,
-      "rsi": 62.63,
-      "ma_window": 200,
-      "ma200": 157.11,
+      "ma200": 2626.63,
       "signal": "UPTREND (Above MA200)"
     }
   ],
@@ -222,6 +209,37 @@
           "rsi": 62.63,
           "ma_window": 200,
           "ma200": 157.11,
+          "signal": "UPTREND (Above MA200)"
+        }
+      ]
+    },
+    {
+      "run_at": "2025-08-25T01:57:12.082577+00:00",
+      "data": [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin",
+          "symbol": "BTC",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-08-25T01:57:12.082577+00:00",
+          "current_price": 113022.33989939325,
+          "rsi_period": 14,
+          "rsi": 43.51,
+          "ma_window": 200,
+          "ma200": 100861.37,
+          "signal": "UPTREND (Above MA200)"
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-08-25T01:57:12.082577+00:00",
+          "current_price": 4731.39304076226,
+          "rsi_period": 14,
+          "rsi": 63.52,
+          "ma_window": 200,
+          "ma200": 2626.63,
           "signal": "UPTREND (Above MA200)"
         }
       ]
