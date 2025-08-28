@@ -73,21 +73,23 @@ def calculate_cdc_actionzone_signal(prices, fast_period=12, slow_period=26, smoo
     if len(prices) < max(fast_period, slow_period) + smoothing_period:
         return "INSUFFICIENT_DATA", None, None, None
     
-    # Apply smoothing to source data (EMA with smoothing period)
+    # Apply smoothing to the entire price series if smoothing_period > 1
     if smoothing_period > 1:
         smoothed_prices = []
         for i in range(len(prices)):
             if i + 1 < smoothing_period:
+                # Not enough data to smooth, use raw price
                 smoothed_prices.append(prices[i])
             else:
-                smoothed_prices.append(exponential_moving_average(prices[max(0, i-smoothing_period+1):i+1], smoothing_period))
-        xPrice = smoothed_prices[-1]
+                smoothed_prices.append(exponential_moving_average(prices[i-smoothing_period+1:i+1], smoothing_period))
+        prices_to_use = smoothed_prices
     else:
-        xPrice = prices[-1]
+        prices_to_use = prices
     
-    # Calculate Fast and Slow EMAs
-    FastMA = exponential_moving_average(prices, fast_period)
-    SlowMA = exponential_moving_average(prices, slow_period)
+    xPrice = prices_to_use[-1]
+    # Calculate Fast and Slow EMAs on the (possibly smoothed) price series
+    FastMA = exponential_moving_average(prices_to_use, fast_period)
+    SlowMA = exponential_moving_average(prices_to_use, slow_period)
     
     if FastMA is None or SlowMA is None:
         return "INSUFFICIENT_DATA", None, None, None
