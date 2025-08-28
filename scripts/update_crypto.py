@@ -106,10 +106,11 @@ def calculate_cdc_actionzone_signal(prices, fast_period=12, slow_period=26, smoo
             signal = "PRE_BUY_1"  # Light Blue zone
     elif Bear and xPrice < FastMA:
         signal = "SELL"  # Red zone
-    elif Bull and xPrice < FastMA and xPrice < SlowMA:
-        signal = "PRE_SELL_2"  # Orange zone
-    elif Bull and xPrice < FastMA and xPrice > SlowMA:
-        signal = "PRE_SELL_1"  # Yellow zone
+    elif Bull and xPrice < FastMA:
+        if xPrice < SlowMA:
+            signal = "PRE_SELL_2"  # Orange zone
+        else:
+            signal = "PRE_SELL_1"  # Yellow zone
     else:
         signal = "NEUTRAL"
     
