@@ -99,10 +99,11 @@ def calculate_cdc_actionzone_signal(prices, fast_period=12, slow_period=26, smoo
     # Define Color Zones based on CDC ActionZone V3 2020 formula
     if Bull and xPrice > FastMA:
         signal = "BUY"  # Green zone
-    elif Bear and xPrice > FastMA and xPrice > SlowMA:
-        signal = "PRE_BUY_2"  # Blue zone
-    elif Bear and xPrice > FastMA and xPrice < SlowMA:
-        signal = "PRE_BUY_1"  # Light Blue zone
+    elif Bear and xPrice > FastMA:
+        if xPrice > SlowMA:
+            signal = "PRE_BUY_2"  # Blue zone
+        else:
+            signal = "PRE_BUY_1"  # Light Blue zone
     elif Bear and xPrice < FastMA:
         signal = "SELL"  # Red zone
     elif Bull and xPrice < FastMA and xPrice < SlowMA:
