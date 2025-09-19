@@ -1,17 +1,17 @@
 {
-  "last_run_utc": "2025-09-18T01:44:25.281607+00:00",
+  "last_run_utc": "2025-09-19T01:47:30.358881+00:00",
   "coins": [
     {
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-09-18T01:44:25.281607+00:00",
-      "current_price": 116732.95133741033,
+      "timestamp_utc": "2025-09-19T01:47:30.358881+00:00",
+      "current_price": 117191.63559971981,
       "rsi_period": 14,
-      "rsi": 60.25,
+      "rsi": 61.53,
       "ma_window": 200,
-      "ma200": 103070.57,
+      "ma200": 103227.97,
       "signal": "UPTREND (Above MA200)"
     },
     {
@@ -19,12 +19,12 @@
       "name": "Ethereum",
       "symbol": "ETH",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-09-18T01:44:25.281607+00:00",
-      "current_price": 4630.474330910224,
+      "timestamp_utc": "2025-09-19T01:47:30.358881+00:00",
+      "current_price": 4607.1287626718695,
       "rsi_period": 14,
-      "rsi": 59.02,
+      "rsi": 58.22,
       "ma_window": 200,
-      "ma200": 2846.4,
+      "ma200": 2858.5,
       "signal": "UPTREND (Above MA200)"
     }
   ],
@@ -1077,6 +1077,37 @@
           "rsi": 59.02,
           "ma_window": 200,
           "ma200": 2846.4,
+          "signal": "UPTREND (Above MA200)"
+        }
+      ]
+    },
+    {
+      "run_at": "2025-09-19T01:47:30.358881+00:00",
+      "data": [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin",
+          "symbol": "BTC",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-09-19T01:47:30.358881+00:00",
+          "current_price": 117191.63559971981,
+          "rsi_period": 14,
+          "rsi": 61.53,
+          "ma_window": 200,
+          "ma200": 103227.97,
+          "signal": "UPTREND (Above MA200)"
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-09-19T01:47:30.358881+00:00",
+          "current_price": 4607.1287626718695,
+          "rsi_period": 14,
+          "rsi": 58.22,
+          "ma_window": 200,
+          "ma200": 2858.5,
           "signal": "UPTREND (Above MA200)"
         }
       ]
