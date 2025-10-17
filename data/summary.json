@@ -1,17 +1,17 @@
 {
-  "last_run_utc": "2025-10-16T01:48:59.324136+00:00",
+  "last_run_utc": "2025-10-17T01:48:03.774457+00:00",
   "coins": [
     {
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-10-16T01:48:59.324136+00:00",
-      "current_price": 111005.99003762171,
+      "timestamp_utc": "2025-10-17T01:48:03.774457+00:00",
+      "current_price": 108751.74352578317,
       "rsi_period": 14,
-      "rsi": 41.06,
+      "rsi": 38.37,
       "ma_window": 200,
-      "ma200": 107403.84,
+      "ma200": 107520.38,
       "signal": "UPTREND (Above MA200)"
     },
     {
@@ -19,42 +19,16 @@
       "name": "Ethereum",
       "symbol": "ETH",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-10-16T01:48:59.324136+00:00",
-      "current_price": 3996.870014186788,
+      "timestamp_utc": "2025-10-17T01:48:03.774457+00:00",
+      "current_price": 3920.759793057368,
       "rsi_period": 14,
-      "rsi": 43.29,
+      "rsi": 41.84,
       "ma_window": 200,
-      "ma200": 3160.47,
+      "ma200": 3170.42,
       "signal": "UPTREND (Above MA200)"
     }
   ],
   "history": [
-    {
-      "run_at": "2025-08-19T01:51:40.183584+00:00",
-      "data": [
-        {
-          "id": "bitcoin",
-          "name": "Bitcoin",
-          "symbol": "BTC",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f3912e99700>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
-        },
-        {
-          "id": "ethereum",
-          "name": "Ethereum",
-          "symbol": "ETH",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/ethereum/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ce630>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
-        },
-        {
-          "id": "solana",
-          "name": "Solana",
-          "symbol": "SOL",
-          "error": "HTTPSConnectionPool(host='api.coingecko.com', port=443): Max retries exceeded with url: /api/v3/coins/solana/market_chart?vs_currency=usd&days=250&interval=daily (Caused by NameResolutionError(\"<urllib3.connection.HTTPSConnection object at 0x7f39124ced50>: Failed to resolve 'api.coingecko.com' ([Errno -5] No address associated with hostname)\"))",
-          "timestamp_utc": "2025-08-19T01:51:40.183584+00:00"
-        }
-      ]
-    },
     {
       "run_at": "2025-08-22T10:40:28.739667+00:00",
       "data": [
@@ -1919,6 +1893,37 @@
           "rsi": 43.29,
           "ma_window": 200,
           "ma200": 3160.47,
+          "signal": "UPTREND (Above MA200)"
+        }
+      ]
+    },
+    {
+      "run_at": "2025-10-17T01:48:03.774457+00:00",
+      "data": [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin",
+          "symbol": "BTC",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-10-17T01:48:03.774457+00:00",
+          "current_price": 108751.74352578317,
+          "rsi_period": 14,
+          "rsi": 38.37,
+          "ma_window": 200,
+          "ma200": 107520.38,
+          "signal": "UPTREND (Above MA200)"
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-10-17T01:48:03.774457+00:00",
+          "current_price": 3920.759793057368,
+          "rsi_period": 14,
+          "rsi": 41.84,
+          "ma_window": 200,
+          "ma200": 3170.42,
           "signal": "UPTREND (Above MA200)"
         }
       ]
