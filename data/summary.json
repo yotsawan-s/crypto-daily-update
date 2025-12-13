@@ -1,17 +1,17 @@
 {
-  "last_run_utc": "2025-12-12T00:32:45.932547+00:00",
+  "last_run_utc": "2025-12-13T00:31:01.381498+00:00",
   "coins": [
     {
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-12-12T00:32:45.932547+00:00",
-      "current_price": 92355.95078669288,
+      "timestamp_utc": "2025-12-13T00:31:01.381498+00:00",
+      "current_price": 90315.60103814639,
       "rsi_period": 14,
-      "rsi": 49.22,
+      "rsi": 44.83,
       "ma_window": 200,
-      "ma200": 108758.96,
+      "ma200": 108654.96,
       "signal": "DOWNTREND (Below MA200)"
     },
     {
@@ -19,47 +19,16 @@
       "name": "Ethereum",
       "symbol": "ETH",
       "vs_currency": "usd",
-      "timestamp_utc": "2025-12-12T00:32:45.932547+00:00",
-      "current_price": 3234.3751242829608,
+      "timestamp_utc": "2025-12-13T00:31:01.381498+00:00",
+      "current_price": 3087.392731002303,
       "rsi_period": 14,
-      "rsi": 53.58,
+      "rsi": 47.34,
       "ma_window": 200,
-      "ma200": 3557.33,
+      "ma200": 3556.59,
       "signal": "DOWNTREND (Below MA200)"
     }
   ],
   "history": [
-    {
-      "run_at": "2025-10-14T01:47:14.203501+00:00",
-      "data": [
-        {
-          "id": "bitcoin",
-          "name": "Bitcoin",
-          "symbol": "BTC",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-10-14T01:47:14.203501+00:00",
-          "current_price": 114604.83001608653,
-          "rsi_period": 14,
-          "rsi": 46.38,
-          "ma_window": 200,
-          "ma200": 107127.68,
-          "signal": "UPTREND (Above MA200)"
-        },
-        {
-          "id": "ethereum",
-          "name": "Ethereum",
-          "symbol": "ETH",
-          "vs_currency": "usd",
-          "timestamp_utc": "2025-10-14T01:47:14.203501+00:00",
-          "current_price": 4222.009422536865,
-          "rsi_period": 14,
-          "rsi": 48.37,
-          "ma_window": 200,
-          "ma200": 3139.21,
-          "signal": "UPTREND (Above MA200)"
-        }
-      ]
-    },
     {
       "run_at": "2025-10-15T01:50:01.899145+00:00",
       "data": [
@@ -1885,6 +1854,37 @@
           "rsi": 53.58,
           "ma_window": 200,
           "ma200": 3557.33,
+          "signal": "DOWNTREND (Below MA200)"
+        }
+      ]
+    },
+    {
+      "run_at": "2025-12-13T00:31:01.381498+00:00",
+      "data": [
+        {
+          "id": "bitcoin",
+          "name": "Bitcoin",
+          "symbol": "BTC",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-12-13T00:31:01.381498+00:00",
+          "current_price": 90315.60103814639,
+          "rsi_period": 14,
+          "rsi": 44.83,
+          "ma_window": 200,
+          "ma200": 108654.96,
+          "signal": "DOWNTREND (Below MA200)"
+        },
+        {
+          "id": "ethereum",
+          "name": "Ethereum",
+          "symbol": "ETH",
+          "vs_currency": "usd",
+          "timestamp_utc": "2025-12-13T00:31:01.381498+00:00",
+          "current_price": 3087.392731002303,
+          "rsi_period": 14,
+          "rsi": 47.34,
+          "ma_window": 200,
+          "ma200": 3556.59,
           "signal": "DOWNTREND (Below MA200)"
         }
       ]
