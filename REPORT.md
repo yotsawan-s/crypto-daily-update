@@ -1,10 +1,10 @@
 # Crypto Daily Summary
 
-Last Update (UTC): 2025-12-19T00:33:05.195971+00:00
+Last Update (UTC): 2025-12-20T00:30:59.625403+00:00
 
 | Coin | Symbol | Price (vs base) | RSI | MA200 | Signal |
 |------|--------|------------------|-----|-------|--------|
-| Bitcoin | BTC | 85349.56 USD | 36.68 | 108081.94 | DOWNTREND (Below MA200) |
-| Ethereum | ETH | 2820.25 USD | 37.25 | 3568.62 | DOWNTREND (Below MA200) |
+| Bitcoin | BTC | 88122.92 USD | 44.44 | 108009.15 | DOWNTREND (Below MA200) |
+| Ethereum | ETH | 2977.93 USD | 45.70 | 3571.32 | DOWNTREND (Below MA200) |
 
 หมายเหตุ: สัญญาณเป็นเพียงการประเมินเชิงเทคนิคจาก MA200 + RSI (ไม่ใช่คำแนะนำการลงทุน)
